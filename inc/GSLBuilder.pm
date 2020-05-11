@@ -12,7 +12,8 @@ use base 'Module::Build';
 use Ver2Func;
 
 sub is_release {
-    return -e '.git' ? 0 : 1;
+    #return -e '.git' ? 0 : 1;
+    return 0;
 }
 
 sub process_swig_files {
